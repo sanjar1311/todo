@@ -4,11 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo</title>
+  <title>Todo Vanilla JS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+
+  <div class="todo">
+    <h1 class="todo__title">To Do</h1>
+    <div class="todo__app-header">
+      <input class="todo-input" type="text" placeholder="To Do">
+      <input type="checkbox">
+      <button class="add-btn">Add</button>
+    </div>
+    
+    <ul class="todo-list">
+
+    </ul>
+  </div>
+
+
+  <template class="todo-item-template">
+    <li class="todo-item">
+      <p class="todo-item__text">Lorem, ipsum dolor.</p>
+      <button class="change-btn">Change</button>
+      <button class="clr-btn">Delate</button>
+    </li>
+  </template>
+
   <script src="app.js"></script>
 </body>
 </html>
