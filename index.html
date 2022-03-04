@@ -10,11 +10,13 @@
 <body>
 
   <div class="todo">
-    <h1 class="todo__title">To Do</h1>
-    <div class="todo__app-header">
-      <input class="todo-input" type="text" placeholder="To Do">
-      <input type="checkbox">
-      <button class="add-btn">Add</button>
+    <div class="todo__header">
+      <h1 class="todo__title">To Do</h1>
+      <div class="todo-header__inner">
+        <input class="todo-input" type="text" placeholder="To Do">
+        <input type="checkbox">
+        <button class="add-btn">+</button>
+      </div>
     </div>
     
     <ul class="todo-list">
@@ -24,11 +26,13 @@
 
 
   <template class="todo-item-template">
-    <li class="todo-item">
-      <p class="todo-item__text">Lorem, ipsum dolor.</p>
-      <button class="change-btn">Change</button>
-      <button class="clr-btn">Delate</button>
-    </li>
+      <li class="todo-item">
+        <p class="todo-item__text">Lorem, ipsum dolor.</p>
+        <div class="todo-item__controls">
+          <button class="change-btn">Change</button>
+        <button class="clr-btn">Delate</button>
+        </div>
+      </li>
   </template>
 
   <script src="app.js"></script>
